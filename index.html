@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Semester SGPA Calculator</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SGPA Calculator (2nd Semester)</h1>
+
+        <div class="subject-grid">
+            <!-- Database Management System Card -->
+            <div class="subject-card">
+                <h3>Database Management System (Credit: 6)</h3>
+                <label for="dbms-theory">Theory Marks (out of 100):</label>
+                <input type="number" id="dbms-theory" placeholder="70% weight">
+                <label for="dbms-practical">Practical Marks (out of 100):</label>
+                <input type="number" id="dbms-practical" placeholder="30% weight">
+            </div>
+
+            <!-- Artificial Intelligence Card -->
+            <div class="subject-card">
+                <h3>Artificial Intelligence (Credit: 4)</h3>
+                <label for="ai-theory">Theory Marks (out of 100):</label>
+                <input type="number" id="ai-theory" placeholder="100% weight">
+            </div>
+
+            <!-- Deep Learning Card -->
+            <div class="subject-card">
+                <h3>Deep Learning (Credit: 4)</h3>
+                <label for="dl-theory">Theory Marks (out of 100):</label>
+                <input type="number" id="dl-theory" placeholder="75% weight">
+                <label for="dl-practical">Practical Marks (out of 100):</label>
+                <input type="number" id="dl-practical" placeholder="25% weight">
+            </div>
+
+            <!-- Image Processing Card -->
+            <div class="subject-card">
+                <h3>Image Processing (Credit: 4)</h3>
+                <label for="ip-theory">Theory Marks (out of 100):</label>
+                <input type="number" id="image-processing-theory" placeholder="75% weight">
+                <label for="ip-practical">Practical Marks (out of 100):</label>
+                <input type="number" id="image-processing-practical" placeholder="25% weight">
+            </div>
+
+            <!-- NPTEL Card -->
+            <div class="subject-card">
+                <h3>NPTEL (Credit: 2)</h3>
+                <label for="nptel-theory">Theory Marks (out of 100):</label>
+                <input type="number" id="nptel-theory" placeholder="100% weight">
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button id="calculate-btn">Calculate SGPA</button>
+        </div>
+
+        <!-- This div is where the final result will be displayed -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
